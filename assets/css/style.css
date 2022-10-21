@@ -21,7 +21,8 @@ body {
 
 body,
 h1,
-p {
+p,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -100,14 +101,35 @@ section .card .card__mainCard input[type=color] {
   padding: 1rem 2.5rem;
   cursor: pointer;
 }
+section .card .card__mainCard hr {
+  width: 75%;
+  background-color: rgb(243, 243, 243);
+  height: 1px;
+  border: none;
+  margin-top: 3rem;
+}
 section .card .card__mainCard .card__mainCard-precio {
   margin: 2rem 0;
   font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 1px 1px 0px #fb2576;
 }
+section .card .card__mainCard .card__mainCard-colorElegido {
+  display: flex;
+}
+section .card .card__mainCard .card__mainCard-colorElegido p {
+  margin-right: 1rem;
+}
+section .card .card__mainCard .card__mainCard-colorElegido .card__mainCard-colorElegido-color {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
+  border-radius: 100px;
+}
 section .card .card__mainCard button {
   width: 75%;
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
