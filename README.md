@@ -1,3 +1,3 @@
 # Desafío introducción JS
 
-(Ver desafío)[#];
+(Ver desafío)[https://fernandolorca.github.io/desdafio-introduccion-js/];
