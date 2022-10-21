@@ -33,7 +33,7 @@ h1 {
   font-size: 3.5rem;
 }
 
-button {
+.card__mainCard-button {
   border-radius: 100px;
   border: none;
   padding: 1rem 2.5rem;
@@ -44,7 +44,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.card__mainCard-button:hover {
   opacity: 0.75;
 }
 
@@ -90,7 +90,7 @@ section {
         color: $secondaryWhite;
       }
 
-      input[type="text"] {
+      input[type="number"] {
         padding: 1rem 2.5rem;
         border-radius: 100px;
         border: none;
@@ -140,7 +140,7 @@ section {
         }
       }
 
-      button {
+      .card__mainCard-button {
         width: 75%;
         margin: 2rem 0;
       }

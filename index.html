@@ -23,11 +23,11 @@
         <div class="card__mainCard">
           <h1>Logitech Ergo M575</h1>
           <p>¿Cuantos mouse quieres?</p>
-          <input type="text" placeholder="Elige cantidad" />
+          <input type="number" placeholder="Elige cantidad" value="1" />
           <p>Elige tu color</p>
           <input type="color" />
           <hr />
-          <p class="card__mainCard-precio">Precio: $32.000</p>
+          <p class="card__mainCard-precio">Precio: $<span>32000</span></p>
           <p>
             Cantidad elegida:
             <span class="card__mainCard-precio-cantidad">0</span>
@@ -36,7 +36,7 @@
             <p>Color elegido:</p>
             <div class="card__mainCard-colorElegido-color"></div>
           </div>
-          <button>Actualizar información</button>
+          <button class="card__mainCard-button">Actualizar información</button>
         </div>
       </div>
     </section>

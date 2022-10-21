@@ -31,7 +31,7 @@ h1 {
   font-size: 3.5rem;
 }
 
-button {
+.card__mainCard-button {
   border-radius: 100px;
   border: none;
   padding: 1rem 2.5rem;
@@ -42,7 +42,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.card__mainCard-button:hover {
   opacity: 0.75;
 }
 
@@ -84,7 +84,7 @@ section .card .card__mainCard p {
   margin-bottom: 0.5rem;
   color: rgb(243, 243, 243);
 }
-section .card .card__mainCard input[type=text] {
+section .card .card__mainCard input[type=number] {
   padding: 1rem 2.5rem;
   border-radius: 100px;
   border: none;
@@ -127,7 +127,7 @@ section .card .card__mainCard .card__mainCard-colorElegido .card__mainCard-color
   background-color: rgb(243, 243, 243);
   border-radius: 100px;
 }
-section .card .card__mainCard button {
+section .card .card__mainCard .card__mainCard-button {
   width: 75%;
   margin: 2rem 0;
 }
