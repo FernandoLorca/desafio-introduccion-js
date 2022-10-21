@@ -50,23 +50,24 @@ h1 {
 
 section {
   width: 90%;
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 2rem 0;
 
   .card {
     background-color: $secondaryDarkBlue;
     width: 45rem;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 2rem;
 
     .card__img {
       background-color: $primaryFuchsia;
       display: flex;
       justify-content: center;
       padding: 3rem 0;
+      border-radius: 1rem;
+      margin: 2rem;
 
       img {
         max-width: 75%;
@@ -115,6 +116,7 @@ section {
         height: 1px;
         border: none;
         margin-top: 3rem;
+        opacity: 0.3;
       }
 
       .card__mainCard-precio {

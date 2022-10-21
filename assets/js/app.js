@@ -18,7 +18,7 @@ button.addEventListener("click", () => {
 
   const priceMultiply = priceToNumber * inputNumberValue;
 
-  price.textContent = priceMultiply.toString();
+  price.textContent = priceMultiply;
   quantity.textContent = inputNumberValue;
   colorChoose.style.backgroundColor = inputColorValue;
 });
