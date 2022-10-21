@@ -1,0 +1,122 @@
+@import "./variables";
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: $fontFamily;
+  background-color: $secondaryPurple;
+  display: flex;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+button {
+  border-radius: 100px;
+  border: none;
+  padding: 1rem 2.5rem;
+  background-color: $primaryFuchsia;
+  color: $secondaryWhite;
+  font-weight: map-get($fontWeight, fontBold);
+  transition: opacity ease 500ms;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+section {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: $secondaryDarkBlue;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    .card__img {
+      background-color: $primaryFuchsia;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 0;
+
+      img {
+        max-width: 75%;
+      }
+    }
+
+    .card__mainCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem;
+
+      h1 {
+        color: $secondaryWhite;
+        font-weight: map-get($fontWeight, fontBold);
+        margin-bottom: 2rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        color: $secondaryWhite;
+      }
+
+      input[type="text"] {
+        padding: 1rem 2.5rem;
+        border-radius: 100px;
+        border: none;
+        margin-bottom: 1rem;
+        width: 75%;
+        height: 4rem;
+        text-align: center;
+      }
+
+      input[type="color"] {
+        width: 75%;
+        height: 4rem;
+        border-radius: 100px;
+        border: none;
+        padding: 1rem 2.5rem;
+        cursor: pointer;
+      }
+
+      .card__mainCard-precio {
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: map-get($fontWeight, fontBold);
+      }
+
+      button {
+        width: 75%;
+      }
+    }
+  }
+}
