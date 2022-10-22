@@ -1,3 +1,3 @@
 # Desafío introducción JS
 
-[Ver desafío](ccion-js/)
+[Ver desafío](https://fernandolorca.github.io/desafio-introduccion-js/)
