@@ -3,7 +3,7 @@
 const inputNumber = document.querySelector('input[type="number"]');
 const inputColor = document.querySelector('input[type="color"]');
 let price = document.querySelector(
-  "body > section > div > div.card__mainCard > p.card__mainCard-precio > span"
+  ".card__mainCard-precio > span"
 );
 const quantity = document.querySelector(".card__mainCard-precio-cantidad");
 const colorChoose = document.querySelector(
@@ -11,14 +11,13 @@ const colorChoose = document.querySelector(
 );
 const button = document.querySelector(".card__mainCard-button");
 
-button.addEventListener("click", () => {
-  const inputNumberValue = inputNumber.value;
-  const inputColorValue = inputColor.value;
-  const priceToNumber = Number(price.textContent);
+const originalPrice = price.textContent
 
-  const priceMultiply = priceToNumber * inputNumberValue;
+button.addEventListener('click', () => {
+  price.textContent = originalPrice
 
-  price.textContent = priceMultiply;
-  quantity.textContent = inputNumberValue;
-  colorChoose.style.backgroundColor = inputColorValue;
-});
+  inputNumber.value > 0 && inputNumber.value < 2 ? originalPrice : price.textContent = Number(price.textContent) * Number(inputNumber.value)
+
+  quantity.textContent = inputNumber.value;
+  colorChoose.style.backgroundColor = inputColor.value
+})
