@@ -2,7 +2,7 @@
 
 const inputNumber = document.querySelector('input[type="number"]');
 const inputColor = document.querySelector('input[type="color"]');
-let price = document.querySelector(".card__mainCard-precio > span");
+const price = document.querySelector(".card__mainCard-precio > span");
 const quantity = document.querySelector(".card__mainCard-precio-cantidad");
 const colorChoose = document.querySelector(
   ".card__mainCard-colorElegido-color"
